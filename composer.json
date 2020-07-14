@@ -1,0 +1,14 @@
+{
+    "name": "marcopgordillo/press",
+    "description": "An elegant markdown-powered blog for the laravel framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Gordillo",
+            "email": "6589245+marcopgordillo@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "orchestra/testbench": "^5.3"
+    }
+}
