@@ -44,10 +44,18 @@ class PressFileParser
     protected function processFields()
     {
         foreach ($this->data as $field => $value) {
-            if ($field === 'date') {
-                $this->data[$field] = Carbon::parse($value);
-            } else if ($field === 'body') {
-                $this->data[$field] = MarkdownParser::parse($value);
+            // if ($field === 'date') {
+                // $this->data[$field] = Carbon::parse($value);
+            // } else if ($field === 'body') {
+                // $this->data[$field] = MarkdownParser::parse($value);
+            // }
+            $class = 'marcopgordillo\\Press\\Fields\\' . ucfirst($field);
+
+            if (class_exists($class) && method_exists($class, 'process')) {
+                $this->data = array_merge(
+                    $this->data,
+                    $class::process($field, $value)
+                );
             }
         }
     }
