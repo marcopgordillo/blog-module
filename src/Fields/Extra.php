@@ -4,7 +4,7 @@ namespace marcopgordillo\Press\Fields;
 
 use marcopgordillo\Press\MarkdownParser;
 
-class Extra
+class Extra extends FieldContract
 {
     public static function process($type, $value, $data = [])
     {
