@@ -9,6 +9,17 @@
         }
     ],
     "require": {
-        "orchestra/testbench": "^5.3"
+        "orchestra/testbench": "^5.3",
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "marcopgordillo\\Press\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "marcopgordillo\\Press\\Tests\\": "tests/"
+        }
     }
 }
