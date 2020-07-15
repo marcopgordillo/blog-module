@@ -2,4 +2,5 @@
 
 return [
     'path' => 'blogs',
+    'driver' => 'file',
 ];
