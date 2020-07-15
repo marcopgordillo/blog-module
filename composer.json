@@ -21,5 +21,8 @@
         "psr-4": {
             "marcopgordillo\\Press\\Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4"
     }
 }

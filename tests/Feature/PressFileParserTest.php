@@ -2,7 +2,6 @@
 
 namespace marcopgordillo\Press\Tests;
 
-use Orchestra\Testbench\TestCase;
 use Carbon\Carbon;
 
 use marcopgordillo\Press\PressFileParser;

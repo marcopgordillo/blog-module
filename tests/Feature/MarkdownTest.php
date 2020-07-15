@@ -2,8 +2,6 @@
 
 namespace marcopgordillo\Press\Tests;
 
-use Orchestra\Testbench\TestCase;
-
 use marcopgordillo\Press\MarkdownParser;
 
 class MarkdownTest extends TestCase
