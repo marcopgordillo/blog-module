@@ -6,4 +6,6 @@ return [
     'file' => [
         'path' => 'blogs',
     ],
+
+    'path' => 'blogs',
 ];
