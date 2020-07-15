@@ -7,7 +7,7 @@ namespace marcopgordillo\Press\Console;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use marcopgordillo\Press\Post;
-use marcopgordillo\Press\Press;
+use marcopgordillo\Press\Facades\Press;
 
 class ProcessCommand extends Command
 {
